@@ -11,7 +11,7 @@ const catchError = require("./lib/catch-error");
 
 const app = express();
 const host = config.HOST;
-const port = config.PORT;
+const port = config.PORT || 3000;
 const LokiStore = store(session);
 
 app.set("views", "./views");
